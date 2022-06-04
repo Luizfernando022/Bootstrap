@@ -36,4 +36,5 @@ header{
 #main{
     margin-top: 150px;
     background-image: url(./wave.svg);
+    min-height: 400px;
 }
