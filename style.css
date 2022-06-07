@@ -20,7 +20,6 @@
 }
 
 body {
-  min-height: 1200px;
 }
 
 header {
@@ -32,9 +31,12 @@ header {
   top: 0;
 }
 #main {
-  margin-top: 150px;
-  background-image: url(./wave.svg);
-  min-height: 400px;
+  margin-top: 120px;
+  min-height: 500px;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -43,7 +45,7 @@ header {
     height: 50px;
     transform: skew(-30deg);
     border: none;
-    background-color: rgb(16, 16, 16);
+    background-color: black;
     font-weight: 800;
     overflow: hidden;
     padding: 0;
@@ -51,6 +53,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 #button p{
     color: white;
@@ -61,13 +64,14 @@ header {
 }
 
 span{
+
     position: absolute;
-    background-color: red;
+    background-color: white;
     opacity: 0;
     height: 100%;
     width: 100%;
-    transform: translateX(-101%);
     transition: all 800ms;
+    transform: translateX(-101%);
     border: none;
 
 }
