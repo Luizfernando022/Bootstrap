@@ -1,40 +1,80 @@
-[data-animation]{
-    opacity: 0;
-    transition: all 1s;
+[data-animation] {
+  opacity: 0;
+  transition: all 1s;
 }
 
-[duration="2s"]{
-    opacity: 0;
-    transition: all 2s;
+[duration="2s"] {
+  opacity: 0;
+  transition: all 2s;
 }
 
-[data-animation=left]{
-    transform: translate(-150px);
-
+[data-animation="left"] {
+  transform: translate(-150px);
 }
-[data-animation=right]{
-    transform: translate(150px);
+[data-animation="right"] {
+  transform: translate(150px);
 }
-.animate{
-    opacity: 1;
-    transform: translate(0);
+.animate {
+  opacity: 1;
+  transform: translate(0);
 }
 
-body{
-    min-height: 1200px;
-} 
+body {
+  min-height: 1200px;
+}
+
+header {
+  box-shadow: 2px 2px 4px black;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  z-index: 10;
+  top: 0;
+}
+#main {
+  margin-top: 150px;
+  background-image: url(./wave.svg);
+  min-height: 400px;
+}
 
 
-header{
-    box-shadow: 2px 2px 4px black;
-    position: fixed;
-    width: 100%;
+#button{
+    width: 300px;
+    height: 50px;
+    transform: skew(-30deg);
+    border: none;
+    background-color: rgb(16, 16, 16);
+    font-weight: 800;
+    overflow: hidden;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#button p{
+    color: white;
+    transform: skew(30deg);
+    transition: all 500ms;
+    font-size: 25px;
     margin: 0;
-    z-index: 10;
-    top: 0;
 }
-#main{
-    margin-top: 150px;
-    background-image: url(./wave.svg);
-    min-height: 400px;
+
+span{
+    position: absolute;
+    background-color: red;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-101%);
+    transition: all 800ms;
+    border: none;
+
+}
+#button:hover span{
+    opacity: 1;
+    transform: translateX(0);
+}
+#button:hover p{
+    color: black;
 }
