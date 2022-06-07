@@ -41,7 +41,8 @@ header {
 
 
 #button{
-    width: 300px;
+    min-width: 200px;
+    max-width: 150px;
     height: 50px;
     transform: skew(-30deg);
     border: none;
@@ -85,6 +86,7 @@ span{
     color: black;
 }
 #introducao{
+  margin-top: 100px;
   height: 500px;
-  background-color: red;
+  background-color: rgb(22, 22, 22)
 }

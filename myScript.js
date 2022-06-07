@@ -16,7 +16,12 @@ window.addEventListener('scroll',function(){
 })
 
 
-aos()
+
+
+onload = ()=>{
+    aos()
+    textAnimation()
+}
 
 
 function aos(){
@@ -39,20 +44,21 @@ function aos(){
 
 }
 
-textAnimation()
+
 
 function textAnimation(){
-    let i = 0
-    let timer = 1000
-    let array = ['S','e','j','a']
+    let timer = 100
+    let text = "Seja bem vindo ao meu site! :) "
+    let array = text.split('')
+    let h2 = document.getElementById('textIntroducao')
 
-    while(i < array.length){
+    for(let i = 0; i < array.length;i++){
+
         setTimeout(()=>{
-            console.log(array[i])
+            h2.innerHTML+=array[i]
         },timer)
-        i++
-        timer+=1000
+        timer+=50
+
     }
-        
 
 }
