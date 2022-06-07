@@ -109,3 +109,12 @@ span {
   transform: skew(-20deg);
 }
 
+@media screen and (max-width:600px){
+  .leftDesign{
+    display: none;
+  }
+  .rightDesign{
+    display: none;
+  }
+}
+
