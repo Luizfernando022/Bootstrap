@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Righteous&family=Source+Sans+Pro:wght@600&family=Special+Elite&display=swap");
+
 [data-animation] {
   opacity: 0;
   transition: all 1s;
@@ -39,54 +41,71 @@ header {
   background-attachment: fixed;
 }
 
-
-#button{
-    min-width: 200px;
-    max-width: 150px;
-    height: 50px;
-    transform: skew(-30deg);
-    border: none;
-    background-color: black;
-    font-weight: 800;
-    overflow: hidden;
-    padding: 0;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    
+#button {
+  min-width: 200px;
+  max-width: 150px;
+  height: 50px;
+  transform: skew(-30deg);
+  border: none;
+  background-color: black;
+  font-weight: 800;
+  overflow: hidden;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-#button p{
-    color: white;
-    transform: skew(30deg);
-    transition: all 500ms;
-    font-size: 25px;
-    margin: 0;
+#button p {
+  color: white;
+  transform: skew(30deg);
+  transition: all 500ms;
+  font-size: 25px;
+  margin: 0;
 }
 
-span{
+span {
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: all 800ms;
+  transform: translateX(-101%);
+  border: none;
+}
+#button:hover span {
+  opacity: 1;
 
-    position: absolute;
-    background-color: white;
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    transition: all 800ms;
-    transform: translateX(-101%);
-    border: none;
-
+  transform: translateX(0);
 }
-#button:hover span{
-    opacity: 1;
-    
-    transform: translateX(0);
+#button:hover p {
+  color: black;
 }
-#button:hover p{
-    color: black;
-}
-#introducao{
+#introducao {
   margin-top: 100px;
   height: 500px;
-  background-color: rgb(22, 22, 22)
+  position: relative;
+  background-color: rgb(22, 22, 22);
 }
+#introducao h2{
+ font-family:  'Special Elite', cursive;
+}
+.leftDesign{
+  width: 20px;
+  height: 75px;
+  opacity: 0;
+  background-color: rgb(220, 220, 220);
+  position: absolute;
+  transform: skew(20deg);
+}
+.rightDesign{
+  width: 20px;
+  height: 75px;
+  opacity: 0;
+  background-color: rgb(220, 220, 220);
+  position: absolute;
+  transform: skew(-20deg);
+}
+

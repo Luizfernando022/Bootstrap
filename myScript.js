@@ -21,6 +21,32 @@ window.addEventListener('scroll',function(){
 onload = ()=>{
     aos()
     textAnimation()
+
+    
+    let leftDesign = [["100px","50px"],["200px","50px"],["300px","50px"]]
+    let rightDesign = [["100px","50px"],["200px","50px"],["300px","50px"]]
+        
+    let leftCount = 0
+    let leftDesigns = document.querySelectorAll('.leftDesign')
+    let rightCount = 0
+    let rightDesigns = document.querySelectorAll('.rightDesign')
+        
+    leftDesigns.forEach(Element=>{
+        Element.style.opacity = "1"
+        Element.style.top = leftDesign[leftCount][0]
+        Element.style.left = leftDesign[leftCount][1]
+        leftCount++
+    })
+
+    rightDesigns.forEach(Element=>{
+        Element.style.opacity = "1"
+        Element.style.top = rightDesign[rightCount][0]
+        Element.style.right = rightDesign[rightCount][1]
+        rightCount++
+    })
+    
+
+
 }
 
 
@@ -62,3 +88,4 @@ function textAnimation(){
     }
 
 }
+
