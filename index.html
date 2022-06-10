@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./Styles/style.css">
     
 </head>
 
@@ -29,12 +29,12 @@
         
     </header>
     <div class="m-0 p-0 d-md-none" id="menu" >
-        <button class="btn-dark w-100 p-0 m-0 btn" data-bs-toggle="collapse" data-bs-target="#menu-mbl">Menu</button>
+        <button class="btn-dark w-100 p-0 m-0 btn dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu-mbl">Menu</button>
         <div class="collapse " id="menu-mbl">
-            <div class="bg-dark text-light  d-flex justify-content-around flex-column align-items-center p-3 " >
-                <p class="m-0 p-3">Sobre</p>
-                <p class="m-0 p-3">Contato</p>
-                <p class="m-0 p-3">Perfil</p>
+            <div class="bg-dark text-light d-flex justify-content-around flex-column align-items-center p-3 " >
+                <a href=""><p class="m-0 p-3 text-light btn-link w-100">Sobre</p></a>
+                <a href="#"><p class="m-0 p-3 text-light btn-link">Contato</p></a>
+                <a href="https:github.com/Luizfernando022" target="_blank"><p class="m-0 p-3 text-light btn-link">Perfil</p></a>
             </div>
         </div>
     </div>
@@ -73,14 +73,14 @@
         <h2>Sobre</h2>
         <div class="d-flex align-items-center justify-content-center flex-column flex-md-row" style="min-height:500px; gap: 20px;">
             <div class="d-flex flex-column align-items-center justify-content-around text-center" data-animation="left" style="row-gap:20px; min-height:350px; width: 35%;" >
-                <img width="200px" class="rounded-circle" src="./Foto.jpg" alt="">
+                <img width="200px" class="rounded-circle" src="./Sources/Foto.jpg" alt="">
                 <p> Olá, meu nome é Luiz Fernando tenho 20 anos e estou estudando Desenvolvimento Web a 6 meses e
                     até então tenho alguma experiencia com HTML CSS E JS.
                 </p>
             </div>
 
              <div class="d-flex flex-column align-items-center justify-content-around text-center " data-animation="right" style="row-gap:20px; min-height:350px; width: 35%;" >
-                <img src="./github.png" width="200px" alt="">
+                <img src="./Sources/github.png" width="200px" alt="">
                 <p>Você pode verificar meus outros projetos que estão hospedados no meu github.
                     <a href="https://github.com/Luizfernando022" target="_blank">Clique Aqui</a> Para abrir meu perfil.
                 </p>
@@ -90,6 +90,6 @@
 
 </body>
 
-<script src="./"></script>
+<script src="./Scripts/myScript.js"></script>
 
 </html>

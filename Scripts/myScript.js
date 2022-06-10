@@ -23,8 +23,7 @@ onload = ()=>{
     textAnimation()
 
     
-    let leftDesign = [["100px","50px"],["200px","50px"],["300px","50px"]]
-    let rightDesign = [["100px","50px"],["200px","50px"],["300px","50px"]]
+    let arrayDesign = [["100px","50px"],["200px","50px"],["300px","50px"]]
         
     let leftCount = 0
     let leftDesigns = document.querySelectorAll('.leftDesign')
@@ -33,15 +32,15 @@ onload = ()=>{
         
     leftDesigns.forEach(Element=>{
         Element.style.opacity = "1"
-        Element.style.top = leftDesign[leftCount][0]
-        Element.style.left = leftDesign[leftCount][1]
+        Element.style.top = arrayDesign[leftCount][0]
+        Element.style.left = arrayDesign[leftCount][1]
         leftCount++
     })
 
     rightDesigns.forEach(Element=>{
         Element.style.opacity = "1"
-        Element.style.top = rightDesign[rightCount][0]
-        Element.style.right = rightDesign[rightCount][1]
+        Element.style.top = arrayDesign[rightCount][0]
+        Element.style.right = arrayDesign[rightCount][1]
         rightCount++
     })
     
