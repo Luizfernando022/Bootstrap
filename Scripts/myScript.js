@@ -25,23 +25,22 @@ onload = ()=>{
     
     let arrayDesign = [["100px","50px"],["200px","50px"],["300px","50px"]]
         
-    let leftCount = 0
+    let Count = 0
     let leftDesigns = document.querySelectorAll('.leftDesign')
-    let rightCount = 0
     let rightDesigns = document.querySelectorAll('.rightDesign')
         
     leftDesigns.forEach(Element=>{
         Element.style.opacity = "1"
-        Element.style.top = arrayDesign[leftCount][0]
-        Element.style.left = arrayDesign[leftCount][1]
-        leftCount++
+        Element.style.top = arrayDesign[Count][0]
+        Element.style.left = arrayDesign[Count][1]
+        Count++
     })
-
+    Count = 0
     rightDesigns.forEach(Element=>{
         Element.style.opacity = "1"
-        Element.style.top = arrayDesign[rightCount][0]
-        Element.style.right = arrayDesign[rightCount][1]
-        rightCount++
+        Element.style.top = arrayDesign[Count][0]
+        Element.style.right = arrayDesign[Count][1]
+        Count++
     })
     
 
